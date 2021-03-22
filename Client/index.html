@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peek In PI</title>
+    <script type="text/javascript" defer src="domhandlers.js"></script>
+    <script type="text/javascript" defer src="updatedom.js"></script>
+    <script type="text/javascript" defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="pi-logo.png">
+</head>
+<body>
+    <div id="app">
+        <div class="centered main">
+            <h1 id="header">Peek In PI!</h1>
+        </div>
+        <div id="searchTermDisplay">Type or tap on the numpad to search for numbers in PI</div>
+        <div id="PIBox">3.1415926535897932384626433832795028841</div>
+        <div id="indexDisplay"></div>
+    </div>
+        
+    <div class="centered" id="gridBox">
+        <div class="grid">
+            <div id="1" class="cell" onclick="appendNumberToSearchTerm('1')">1</div>
+            <div id="2" class="cell" onclick="appendNumberToSearchTerm('2')">2</div>
+            <div id="3" class="cell" onclick="appendNumberToSearchTerm('3')">3</div>
+            <div id="4" class="cell" onclick="appendNumberToSearchTerm('4')">4</div>
+            <div id="5" class="cell" onclick="appendNumberToSearchTerm('5')">5</div>
+            <div id="6" class="cell" onclick="appendNumberToSearchTerm('6')">6</div>
+            <div id="7" class="cell" onclick="appendNumberToSearchTerm('7')">7</div>
+            <div id="8" class="cell" onclick="appendNumberToSearchTerm('8')">8</div>
+            <div id="9" class="cell" onclick="appendNumberToSearchTerm('9')">9</div>
+            <div id="x" class="cell" onclick="clearSearchTerm()">&#10005;</div>
+            <div id="0" class="cell" onclick="appendNumberToSearchTerm('0')">0</div>
+            <div id="backspace" class="cell" onclick="handleBackSpace()">&#8592;</div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

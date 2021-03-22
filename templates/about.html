@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flask Peek In PI</title>
+</head>
+<body>
+	<header>Hello</header>
+	<div id="info">
+		<div class="container">
+			<a href="{{ url_for('hello', person='World') }}" class="link">Hello World</a>
+			<p>This is a page where whatever name you put after the 'hello' tag wil greet you</p>
+		</div>
+		
+		<br>
+		<br>
+
+		<div class="container">
+			<a href="{{ url_for('search', goal=14) }}" class="link">Search In PI</a>
+			<p>If you follow this link then you can search for numbers in PI</p>
+		</div>
+	</div>
+</body>
+
+<style type="text/css">
+	body {
+		background-color: purple;
+		color: white;
+	}
+
+	header {
+		text-align: center;
+		font-size: 3rem;
+		padding: 1rem;
+	}
+
+	.info {
+		display: grid;
+	}
+
+	.link {
+		font-size: 3rem;
+		color: white;
+		text-align: center;
+	}
+
+	.container {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		/*width: 30rem;*/
+		border: 2px solid white;
+		background-color: navy;
+		padding: 1rem;
+	}
+</style>
+</html>
